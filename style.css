@@ -1,15 +1,47 @@
-* {
-	padding: 0px;
-	margin: 0px;
-}
+
 
 body {
-	background-color: silver;
+	
 	font-family: sans-serif;
+	background-image: url(Dora-the-Explorer-Wallpapers.jpg);
+	background-size: 1590px 773px;
+	background-repeat: no-repeat;
+
+
+
 }
 
-#level_title {
-	font-size: 18px;
-	color: black;		
-	font-weight: bold;
+
+
+
+
+#level_title{
+	
+	top:180px;
+	color: #7B68EE;
+	font-size: 70px;
+	text-shadow: 5px 5px #8A2BE2;
+	left: 10px;
+	font-style: oblique;
+	
+}
+
+p{
+	position: relative;
+	top: 100px;
+	color: white;
+	font-size: 25px;
+
+
+}
+
+#start{
+	position: relative;
+	background-color: purple;
+	color: white;
+	border-radius: 80px;
+	font-size: 25px;
+	top: 100px;
+
+
 }
