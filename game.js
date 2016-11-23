@@ -10,13 +10,43 @@ function Begin(){
 	document.getElementById('text').style.color = "white";
 	document.body.style.backgroundImage = "url('unnamed.png')";
 	document.body.style.backgroundSize = "1540px 760px";
+	
 	document.getElementById('brug').style.display = "inline";
+	
 }
 
 
 function brug(){
-document.getElementById('text').style.display = "none";
-document.getElementById('text').innerHTML= "";
-document.body.style.backgroundImage = "url('brug.jpg')";
-document.getElementById('brug').style.display = "none";
+		clearInterval(auto_interval);
+	document.getElementById('text').innerHTML = "";
+	showtekst('Oneeeee Boots, Troll Booth doet de poort dicht!!!');
+      
+	
+	document.body.style.backgroundImage = "url('brug.jpg')";
+	document.getElementById('brug').style.display = "none";
+	document.getElementById('brug').style.position = "relative";
+	document.getElementById('brug').style.bottom = "100px";
+
+}
+
+
+var auto_interval
+function showtekst (tekst){
+	document.getElementById('brug').innerHTML = "";
+	var auto_char = tekst.split('');
+	var auto_length = auto_char.length - 1;
+	var auto_index = 0;
+     auto_interval = setInterval(function(){
+		if (auto_index <= auto_length) {
+		document.getElementById('text').innerHTML += auto_char[auto_index];
+		auto_index++;
+	}
+		else {
+			clearInterval(auto_interval);
+		}
+	},50);
+}
+
+function back(){
+	location.reload();
 }
