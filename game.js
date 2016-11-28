@@ -3,6 +3,7 @@ function Begin(){
 	document.getElementById('start').style.display = "none";
 	document.getElementById('level_title').innerHTML ="";
 	document.getElementById('text').innerHTML =" Hallo, ik ben Dora. Waar kan je de verassingsheuvel vinden?";
+
 	document.getElementById('text').style.top = "200px";
 	document.getElementById('text').style.position = "absolute";
 	document.getElementById('text').style.left = "-100px";
@@ -10,22 +11,36 @@ function Begin(){
 	document.getElementById('text').style.color = "white";
 	document.body.style.backgroundImage = "url('unnamed.png')";
 	document.body.style.backgroundSize = "1540px 760px";
-	
-	document.getElementById('brug').style.display = "inline";
-	
+	document.getElementById('refresh').style.display = "none";
+document.getElementById('brug').style.display = "inline";
+	document.getElementById('house').style.display = "inline";
+	document.getElementById('heuvel').style.display = "inline";
+
 }
 
 
 function brug(){
 		clearInterval(auto_interval);
 	document.getElementById('text').innerHTML = "";
-	showtekst('Oneeeee Boots, Troll Booth doet de poort dicht!!!');
-      
-	
+	showtekst('Oneeeee Boots, Troll Booth doet de poort dicht. We kunnen helaas niet verder :(');
 	document.body.style.backgroundImage = "url('brug.jpg')";
 	document.getElementById('brug').style.display = "none";
-	document.getElementById('brug').style.position = "relative";
-	document.getElementById('brug').style.bottom = "100px";
+	document.getElementById('text').style.top = "680px";
+	document.getElementById('text').style.textShadow = "2px 2px black";
+
+	document.getElementById('refresh').style.display = "inline";
+	document.getElementById('refresh').style.fontSize = "20px";
+	document.getElementById('over').style.display = "inline";
+	document.getElementById('over').style.position = "absolute";
+	document.getElementById('over').style.left = "540px";
+	document.getElementById('over').style.top= "10px";
+	
+	document.getElementById('house').style.display = "none";
+		document.getElementById('heuvel').style.display = "none";
+	
+
+
+	
 
 }
 
@@ -47,6 +62,9 @@ function showtekst (tekst){
 	},50);
 }
 
-function back(){
-	location.reload();
+function myFunction() {
+    location.reload();
 }
+
+
+
