@@ -148,3 +148,30 @@ img{
     border-radius: 30%;
     font-size: 16px;
 }
+
+#key{
+	display: none;
+
+}
+
+#swieber{
+	position: absolute;
+	left:910px;
+	top: 140px;
+}
+
+#next1{
+	position: absolute;
+	left: 1450px;
+	display: none;
+	background-color: white;
+    color: black;
+    border: 2px solid 	#9932CC;
+    display: none;
+    border-radius: 30%;
+    font-size: 16.5px;
+}
+
+#stelen{
+    display: none;
+}
