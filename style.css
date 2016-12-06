@@ -172,6 +172,16 @@ img{
     font-size: 16.5px;
 }
 
-#stelen{
+#dora{
     display: none;
+    position: absolute;
+    top: 460px;
+    left: 370px;
+    display: none;
+    background-color: #C646C6;
+    color: black;
+    border: 2px solid   #C646C6;
+    display: none;
+    border-radius: 30%;
+    font-size: 30px;
 }

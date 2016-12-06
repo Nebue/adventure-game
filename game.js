@@ -16,7 +16,9 @@ function Begin(){
 	document.getElementById('heuvel').style.display = "inline";
 	document.getElementById('over').style.display = "none";
 	document.getElementById('next1').style.display= "none";
-	document.getElementById('stelen').style.display = "none";
+	document.getElementById('dora').style.display = "none";
+
+	
 
 
 
@@ -46,7 +48,9 @@ function brug(){
 		document.getElementById('over').style.display = "none";
 		    document.getElementById('swieber').style.display = "none";
 		    	document.getElementById('next1').style.display= "none";
-		    		document.getElementById('stelen').style.display = "none";
+		    	document.getElementById('dora').style.display = "none";
+
+		    		
 	
 }
 
@@ -91,13 +95,14 @@ function myFunction() {
 	document.getElementById('text').style.display = "inline";
 	 document.getElementById('swieber').style.display = "none";
 	 	document.getElementById('next1').style.display= "none";
-	 		document.getElementById('stelen').style.display = "none";
+	 	document.getElementById('dora').style.display = "none";
+	 	
 }
 
 
 function Huis(){
 	clearInterval(auto_interval);
-		showtekst('Kan jij de sleutel van het huis in het bos vinden?');
+		showtekst(" Kan jij de sleutel van het huis in het bos vinden?");
 		document.body.style.backgroundImage = "url('hetbos.jpg')";
 		document.getElementById('house').style.display = "none";
 		document.getElementById('heuvel').style.display = "none";
@@ -118,7 +123,8 @@ function Huis(){
 		document.getElementById('text').style.display = "inline";
 		 document.getElementById('swieber').style.display = "none";
 		 	document.getElementById('next1').style.display= "none";
-			document.getElementById('stelen').style.display = "none";
+		 	document.getElementById('dora').style.display = "none";
+		
 
 }
 
@@ -130,7 +136,8 @@ function sleutel() {
     showtekst(' Goedzo ! Je hebt de sleutel gevonden je kan je weg vervolgen.');
     document.getElementById('swieber').style.display = "none";
     	document.getElementById('next1').style.display= "none";
-    		document.getElementById('stelen').style.display = "none";
+    	document.getElementById('dora').style.display = "none";
+    	
    
 
 }
@@ -144,26 +151,34 @@ document.getElementById('next').style.display= "none";
 document.getElementById('next1').style.display= "inline";
 document.getElementById('swieber').style.display = "inline";
 showtekst(' Daar hebben we Zwieber de vos. Pas op Boots hij wilt de sleutel stelen. We moeten ons verstoppen! ');
-	document.getElementById('stelen').style.display = "none";
+document.getElementById('dora').style.display = "none";
+	
 
 
 }
 
+
+
+
+
+function niet(){
+	clearInterval(auto_interval);
+	showtekst('Zwieber niet stelen!!!!    ');
+	document.getElementById('text').style.display = "inline";
+
+		
+}
 
 function volgende1(){
 	clearInterval(auto_interval);
 
 document.body.style.backgroundImage = "url('swieberdora.jpg')";
 document.getElementById('swieber').style.display = "none";
-document.getElementById('text').style.display = "none";
-	document.getElementById('stelen').style.display = "none";
+document.getElementById('text').style.display = "inline";
+document.getElementById('dora').style.display = "inline";
+document.getElementById('text').innerHTML =" Oneeeee Zieber de vos heeft ons gevonden. Vind de knop om hem weg te jagen!  ";
+document.getElementById('next1').style.display = "none";
 
 
-}
 
-
-function niet(){
-	clearInterval(auto_interval);
-	showtekst('Zwieber niet stelen!!!!')
-		document.getElementById('stelen').style.display = "inline";
 }
